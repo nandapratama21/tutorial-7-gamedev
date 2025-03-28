@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bg4bbgb1n2h1r"]
+
+[ext_resource type="PackedScene" uid="uid://ixkfsw4mj4ly" path="res://scenes/world_1.tscn" id="1_rbfbj"]
+[ext_resource type="PackedScene" uid="uid://dx73gy38rsmkr" path="res://scenes/player.tscn" id="2_snalq"]
+[ext_resource type="PackedScene" uid="uid://cmx2qwlq5hqi2" path="res://scenes/goal.tscn" id="3_bseqe"]
+
+[node name="Level 1" type="Node3D"]
+
+[node name="World 1" parent="." instance=ExtResource("1_rbfbj")]
+
+[node name="Player" parent="." instance=ExtResource("2_snalq")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.947574, -2.05097, -6.23661)
+
+[node name="Goal" parent="." instance=ExtResource("3_bseqe")]
+transform = Transform3D(5.75822, 0, 0, 0, 5.75822, 0, 0, 0, 5.75822, 1.26569, -2.76135, 15.6964)
+sceneName = "Win Screen"
+
+[node name="Lose" parent="." instance=ExtResource("3_bseqe")]
+transform = Transform3D(100.727, 0, 0, 0, 100.727, 0, 0, 0, 100.727, 1.26955, -54.7921, 4.98384)
+sceneName = "Level_1"
